@@ -1,0 +1,62 @@
+@import 'settings';
+@import 'foundation-emails';
+
+@import 'template/template';
+
+.hero {
+  background-color: #ae2b2b;
+  background-image: url("../assets/img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ae2b2b;
+    position: absolute;
+    left: calc(50% - 10px);
+    bottom: -9px;
+    transform: rotate(45deg);
+  }
+  @media screen and (max-width: 596px) {
+    background-size: 100% 100%;
+  }
+  &__logo {
+    padding-top: 26px;
+    img {
+      max-width: 128px;
+    }
+  }
+  &__image {
+    @media screen and (max-width: 596px) {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+  &__icon {
+    max-height: 20px;
+    max-width: 25px;
+  }
+  &__line {
+    background-color: #ffffff;
+    height: 1px;
+    margin-top: 9px;
+    width: 100%;
+  }
+}
+
+.pb0 {
+  padding-bottom: 0 !important;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-bold {
+  font-weight: bold;
+}
