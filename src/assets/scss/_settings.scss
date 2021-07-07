@@ -102,12 +102,14 @@ $button-padding: (
   small: 5px 10px 5px 10px,
   default: 8px 16px 8px 16px,
   large: 10px 20px 10px 20px,
+  my: 8px 8px 8px 8px,
 );
 $button-font-size: (
   tiny: 10px,
   small: 12px,
   default: 16px,
   large: 20px,
+  my: 14px,
 );
 $button-color: $white;
 $button-color-alt: $medium-gray;
